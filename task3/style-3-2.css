@@ -9,7 +9,7 @@ body{
     background:#eee;
 }
 
-/* header */
+
 
 header{
     height:100px;
@@ -37,7 +37,6 @@ header{
     overflow: hidden;
 }
 
-/* left side */
 
 .left{
     margin-top: 160px;
@@ -60,7 +59,7 @@ header{
     color: black;
 }
 
-/* right side */
+
 
 .right{
     width:40%;
