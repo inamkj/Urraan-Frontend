@@ -7,4 +7,8 @@ Task 2
 ![Task 2 output](task2/images/output-task-2.png)
 
 Task 3
-![Task 2 output](task3/images/output-task3-1.png)
+Screen 1
+![Task 3 output](task3/images/output-task3-1.png)
+
+Screen 2
+![Task 3 output](task3/images/output-task3-2.png)
