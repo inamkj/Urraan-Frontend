@@ -11,4 +11,4 @@ Screen 1
 ![Task 3 output](task3/images/output-task3-1.png)
 
 Screen 2
-![Task 3 output](task3/images/output-task3-2.png)
+![Task 3 output](task3/images/output-task-3-2.png)
