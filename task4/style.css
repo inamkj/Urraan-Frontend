@@ -1,11 +1,10 @@
 body {
     font-family: Arial;
     margin: 0;
-    background: #f3f3f3;
 }
 
 .container {
-    max-width: 1263px;
+    max-width: 1200px;
     margin: auto;
     width: 100%;
 }
@@ -84,9 +83,10 @@ body {
     align-items: stretch;
 }
 
-.hero-left{
+.hero-left {
     width: 50%;
 }
+
 .hero-right {
     width: 50%;
 }
@@ -97,7 +97,6 @@ body {
 }
 
 .hero-left {
-
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
     overflow: hidden;
 }
@@ -190,10 +189,9 @@ body {
     gap: 8px;
 }
 
-/* Container */
+
 .info-section {
     padding: 30px 20px;
-    background-color: #f9f9f9;
 }
 
 .info-grid {
@@ -272,6 +270,7 @@ body {
 }
 
 .info-card h3 span {
+    font-family: 'Times New Roman', Times, serif;
     color: #8d0f0f;
 }
 
@@ -336,13 +335,244 @@ body {
 .info-col.col-3 {
     flex: 0 0 32%;
 }
-
-.page-wrapper{
+.main-container {
+    background-color: #fff;
     display: flex;
+    max-width: 1200px;
+    margin: 40px auto;
     gap: 20px;
+}
+
+.sidebar {
+    width: 25%;
+}
+
+.main-container h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    color: #1a1a1a;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.main-container h3 span {
+    font-family: 'Times New Roman', Times, serif;
+    color: #8d0f0f;
+}
+.left-sidebar {
+    width: 25%;
+}
+.right-sidebar {
+    width: 25%;
+}
+
+.main-content {
+    width: 50%;
+    background: #fff;
     padding: 20px;
+    margin-top: 0;
 }
-.practice-list{
-    background-color: grey;
-    gap: 20px;
+.main-content h1{
+    margin-top: 0;
+    font-family: 'Times New Roman', Times, serif;
 }
+.sidebar-title {
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.practice-item {
+    display: flex;
+    margin-bottom: 10px;
+    background: #868585;
+}
+
+.bar {
+    width: 8px;
+}
+
+.bar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.practice-content {
+    padding: 12px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.practice-content h4 {
+    font-size: 22px;
+    font-weight: 800;
+    color: white;
+    margin: 0 0 8px 0;
+}
+
+.learn-more {
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-left: auto;
+}
+
+.learn-more img {
+    width: 20px;
+    height: 20px;
+}
+
+.widget {
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+
+
+.widget p {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    background: #a30000;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.btn span {
+    margin-left: 5px;
+}
+
+.badges{
+    display: flex;
+    flex-direction: column;   
+    align-items: center; 
+}
+.badges img {
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+.social {
+    margin-top: 20px;
+}
+
+.social h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.social-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+}
+
+@media (max-width: 992px) {
+    .container {
+        flex-wrap: wrap;
+    }
+
+    .left-sidebar {
+        width: 30%;
+    }
+    .main-content {
+        width: 70%;
+    }
+    .right-sidebar {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+
+    .confidential {
+        display: none;
+    }
+
+
+    .hero-grid {
+        flex-wrap: wrap;
+    }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+    .main-container,
+    .container {
+        flex-direction: column;
+    }
+
+    .left-sidebar,
+    .main-content,
+    .right-sidebar {
+        width: 100%;
+        margin: 0;
+    }
+
+    .left-sidebar {
+        display: none;
+    }
+
+    .hero-grid {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero-left,
+    .hero-right {
+        width: 100%;
+    }
+
+    .hero-left img {
+        width: 100%;
+        height: auto; 
+    }
+
+    .hero-right h2 {
+        margin: 20px 0 10px 0;
+        text-align: center;
+    }
+
+    .form-row {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .hero-form label {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .hero-bottom {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .confidential {
+        display: none;
+    }
+} 
