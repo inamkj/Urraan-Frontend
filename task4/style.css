@@ -518,7 +518,6 @@ body {
     }
 }
 
-/* Mobile devices */
 @media (max-width: 768px) {
     .main-container,
     .container {
