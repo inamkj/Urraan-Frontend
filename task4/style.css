@@ -434,9 +434,6 @@ body {
     padding: 15px;
     margin-bottom: 15px;
 }
-
-
-
 .widget p {
     font-size: 13px;
     margin-bottom: 10px;
@@ -518,7 +515,6 @@ body {
     }
 }
 
-/* Mobile devices */
 @media (max-width: 768px) {
     .main-container,
     .container {
