@@ -25,17 +25,24 @@
     </header>
 
     <nav class="navbar">
-        <div class="container">
-            <ul>
-                <li><a href="#home">HOME</a></li>
-                <li><a href="#bio">BIOGRAPHY</a></li>
-                <li><a href="#blog">BLOG</a></li>
-                <li><a href="#area">AREAS WE SERVE</a></li>
-                <li><a href="#library">LIBRARY</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-            </ul>
-        </div>
-    </nav>
+    <div class="container nav-wrapper">
+
+        <img src="images/responsive_menu_icon.png"
+             class="menu-toggle"
+             id="menu-toggle"
+             alt="menu" />
+
+        <ul class="nav-menu">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">BIOGRAPHY</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">AREAS WE SERVE</a></li>
+            <li><a href="#">LIBRARY</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+
+    </div>
+</nav>
 
     <section class="hero">
         <div class="container hero-grid">
@@ -83,7 +90,7 @@
                 </div>
                 <textarea placeholder="Tell us about your case here..."></textarea>
                 <div class="hero-bottom">
-                    
+
                     <span>100% Privacy Guaranteed</span>
 
                     <button class="btn-red">
@@ -275,6 +282,17 @@
             </div>
         </aside>
     </div>
+
+    <script>
+        const toggle = document.getElementById('menu-toggle');
+        const menu = document.querySelector('.nav-menu');
+
+        toggle.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+    </script>
+
+
 </body>
 
 </html>

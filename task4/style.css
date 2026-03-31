@@ -2,6 +2,9 @@ body {
     font-family: Arial;
     margin: 0;
 }
+* {
+    box-sizing: border-box;
+}
 
 .container {
     max-width: 1200px;
@@ -41,36 +44,6 @@ body {
 .header-contact span {
     display: block;
     margin-top: 3px;
-}
-
-.navbar {
-    background: #8d0f0f;
-}
-
-.navbar ul {
-    display: flex;
-    justify-content: flex-end;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.navbar li {
-    padding: 15px 25px;
-    color: white;
-    cursor: pointer;
-}
-
-.navbar li:active,
-.navbar li:focus {
-    background: rgb(113, 113, 113);
-    outline: none;
-}
-
-.navbar a {
-    color: white;
-    text-decoration: none;
-    display: block;
 }
 
 .hero {
@@ -170,15 +143,6 @@ body {
     margin-top: 5%;
     rotate: 25deg;
 }
-
-/* .confidential {
-    position: absolute;
-    right: 80px;
-    top: 160px;
-    transform: rotate(15deg);
-    width: 200px;
-} */
-
 
 .hero-bottom {
     display: flex;
@@ -497,54 +461,76 @@ body {
     color: #fff;
     text-decoration: none;
 }
-
-@media (max-width: 992px) {
-    .container {
-        flex-wrap: wrap;
-    }
-
-    .left-sidebar {
-        width: 30%;
-    }
-    .main-content {
-        width: 70%;
-    }
-    .right-sidebar {
-        width: 100%;
-        margin-top: 20px;
-    }
-
-
-    .confidential {
-        display: none;
-    }
-
-
-    .hero-grid {
-        flex-wrap: wrap;
-    }
+img {
+    max-width: 100%;
+    height: auto;
+}
+.navbar {
+    background: #8d0f0f;
+    position: relative;
 }
 
-@media (max-width: 768px) {
-    .main-container,
-    .container {
-        flex-direction: column;
+.nav-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li {
+    padding: 15px 20px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-toggle {
+    display: none;
+    width: 50px;
+    cursor: pointer;
+}
+
+@media (max-width: 992px) {
+    .navbar .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    .left-sidebar,
-    .main-content,
-    .right-sidebar {
-        width: 100%;
-        margin: 0;
+    .menu-toggle {
+        display: block;
     }
 
-    .left-sidebar {
+    .nav-menu {
         display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        background: #8d0f0f;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu li {
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid rgba(255,255,255,0.2);
     }
 
     .hero-grid {
         flex-direction: column;
-        gap: 10px;
     }
 
     .hero-left,
@@ -552,33 +538,104 @@ body {
         width: 100%;
     }
 
-    .hero-left img {
-        width: 100%;
-        height: auto; 
+    .hero-right h2 {
+        margin: 10px 0;
     }
 
-    .hero-right h2 {
-        margin: 20px 0 10px 0;
+    .form-img {
+        flex-direction: column;
+    }
+
+    .hero-form {
+        width: 100%;
+    }
+
+    .img-confidential {
+        margin: 10px auto;
+        text-align: center;
+        rotate: 0deg;
+    }
+
+    .info-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .info-col {
+        flex: 100%;
+    }
+
+    .main-container {
+        flex-direction: column;
+    }
+
+    .left-sidebar,
+    .right-sidebar,
+    .main-content {
+        width: 100%;
+    }
+
+    
+}
+
+@media (max-width: 600px) {
+
+     
+
+    .header-flex {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .header-contact {
+        margin-right: 0;
         text-align: center;
     }
 
+    .header-contact h1 {
+        font-size: 24px;
+    }
+
+    
+    .hero {
+        padding: 15px;
+    }
+
+    .hero-right {
+        padding: 15px;
+    }
+
+    .hero-right h2 span {
+        font-size: 24px;
+    }
+
     .form-row {
-        width: 100%;
         flex-direction: column;
+        align-items: flex-start;
     }
 
     .hero-form label {
         width: 100%;
-        margin-bottom: 5px;
+        margin-bottom: 3px;
     }
 
     .hero-bottom {
         flex-direction: column;
         gap: 10px;
-        align-items: center;
+        align-items: flex-start;
     }
 
-    .confidential {
-        display: none;
+    .btn-red {
+        width: 100%;
+        justify-content: center;
     }
-} 
+
+    .practice-content h4 {
+        font-size: 18px;
+    }
+
+    .learn-more {
+        font-size: 14px;
+    }
+}
