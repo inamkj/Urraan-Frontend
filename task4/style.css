@@ -593,14 +593,7 @@ img {
     .right-sidebar .wid{
         display: flex;
     }
-    .info-card .icon,
-    .info-card .icons {
-    width: max-width;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    }
+    
 }
 
 @media (max-width: 600px) {
