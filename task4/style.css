@@ -207,7 +207,7 @@ body {
 
 .info-card .icon,
 .info-card .icons {
-    flex: 0 0 30%;
+    width: max-content;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -587,13 +587,20 @@ img {
     }
 
     .badges {
-        width: 50%;
+        width: max-width;
         flex-direction: row;
     }
     .right-sidebar .wid{
         display: flex;
     }
-
+    .info-card .icon,
+    .info-card .icons {
+    width: max-width;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    }
 }
 
 @media (max-width: 600px) {
