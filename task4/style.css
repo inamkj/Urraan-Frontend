@@ -585,6 +585,7 @@ img {
     .left-sidebar,
     .right-sidebar {
         flex: 1 1 calc(50% - 20px);
+        padding: 20px;
     }
 
     .main-content {
