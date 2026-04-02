@@ -592,8 +592,12 @@ img {
     }
 
     .badges {
-        width: max-width;
+        width: 50%;
+        display: flex;
         flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-left: 20%;
     }
     .right-sidebar .wid{
         display: flex;
