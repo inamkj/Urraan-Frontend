@@ -151,5 +151,6 @@ function handleFirstLast(){
         return;
     }
     let result = pickFirstLast(lengthInput);
-    document.getElementById("randomArrayResult").innerText = `Generated Array: ${result.array.join(", ")}`;
+    document.getElementById("randomArrayResult").innerText = 
+        `Array: [${result.array.join(", ")}]\nFirst: ${result.first}, Last: ${result.last}`;
 }
