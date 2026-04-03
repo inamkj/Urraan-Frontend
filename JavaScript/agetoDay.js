@@ -99,7 +99,7 @@ function calculateBMI(weight, height) {
     bmi = bmi.toFixed(2);
 
     let category = "";
-    if (bmi < 18,5) {
+    if (bmi < 18.5) {
         category = "Underweight";
     }
     else if (bmi < 25) {
@@ -128,9 +128,6 @@ function handleBMI(){
 }
 
 function pickFirstLast(length) {
-    if (length <= 0) {
-        return "Length must be a positive integer.";
-    }
     let arr = [];
     for (let i=0; i<length; i++) {
         arr.push(Math.floor(Math.random() * 100)+1);
@@ -144,10 +141,10 @@ function pickFirstLast(length) {
 }
 
 function handleFirstLast(){
-    let lengthInput = document.getElementById("lengthInput").value;
+    let lengthInput = document.getElementById("arrayLenghth").value;
 
     if(isNaN(lengthInput) || lengthInput <= 0) {
-        document.getElementById("firstLastResult").innerText = "Please enter a valid positive integer for length.";
+        document.getElementById("randomArrayResult").innerText = "Please enter a valid positive integer for length.";
         return;
     }
     let result = pickFirstLast(lengthInput);
