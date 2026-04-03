@@ -142,3 +142,14 @@ function pickFirstLast(length) {
         last: arr[arr.length - 1]
     };
 }
+
+function handleFirstLast(){
+    let lengthInput = document.getElementById("lengthInput").value;
+
+    if(isNaN(lengthInput) || lengthInput <= 0) {
+        document.getElementById("firstLastResult").innerText = "Please enter a valid positive integer for length.";
+        return;
+    }
+    let result = pickFirstLast(lengthInput);
+    document.getElementById("randomArrayResult").innerText = `Generated Array: ${result.array.join(", ")}`;
+}
