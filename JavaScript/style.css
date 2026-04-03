@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+section {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+    background-color: #f5f7fa;
+}
+.card {
+    background: #ffffff;
+    padding: 30px;
+    width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.card h3 {
+    margin-bottom: 20px;
+}
+.card input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+}
+.card button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #45a049;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.card button:hover {
+    background-color: #45a049;
+}
+.result {
+    font-weight: bold;
+    margin-top: 20px;
+}

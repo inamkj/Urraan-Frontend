@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Age to Days</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <section>
+        <div class="card">
+            <h3>Age to Days Calculator</h3>
+            <label for="ageInput">Enter your age:</label>
+            <input type="number" id="ageInput" placeholder="Enter your age" />
+            <button onclick="handleAge()">Calculate Days</button>
+            <p class="result" id="ageResult"></p>
+        </div>
+
+        <div class="card">
+            <h3>Hours to Second Calculator</h3>
+            <label for="hourInput">Enter hours:</label>
+            <input type="number" id="hoursInput" placeholder="Enter hours" />
+            <button onclick="handleHours()">Calculate Seconds</button>
+            <p class="result" id="hoursResult"></p>
+        </div>
+
+        <div class="card">
+            <h3>Next Number (Array)</h3>
+            <input id="arrayInput" type="text" placeholder="Enter numbers e.g. 10,20,30,40">
+            <input id="targetNumber" type="text" placeholder="Number to find next of">
+            <button onclick="handleArrayNext()">Find Next</button>
+            <p class="result" id="arrayResult"></p>
+        </div>
+    </section>
+
+    <section>
+        <div class="card single-next">
+            <h3>Next Number (Single Value)</h3>
+
+            <input id="singleNumber" type="text" placeholder="Enter a number (int or float)">
+
+            <button onclick="handleSingleNext()">Find Next</button>
+
+            <p class="result" id="singleResult"></p>
+        </div>
+
+        <div class="card">
+            <h3>Capitalize Name</h3>
+            <input type="text" id="nameInput" placeholder="Enter Name (lowercase)">
+            <button onclick="handleName()">Capitalize</button>
+            <p class="result" id="nameResult"></p>
+        </div>
+
+        <div class="card">
+            <h3>BMI Calculator</h3>
+            <input type="number" id="weightInput" placeholder="Enter weight (kg)">
+            <input type="number" id="heightInput" placeholder="Enter height (meters)">
+    
+            <button onclick="handleBMI()">Calculate BMI</button>
+            <p class="result" id="bmiResult"></p>
+        </div>
+    </section>
+
+    <script src="agetoDay.js"></script>
+</body>
+
+</html>
