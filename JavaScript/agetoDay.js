@@ -126,3 +126,19 @@ function handleBMI(){
     let result = calculateBMI(weightInput, heightInput);
     document.getElementById("bmiResult").innerText = `Your BMI is ${result.bmi} (${result.category})`;
 }
+
+function pickFirstLast(length) {
+    if (length <= 0) {
+        return "Length must be a positive integer.";
+    }
+    let arr = [];
+    for (let i=0; i<length; i++) {
+        arr.push(Math.floor(Math.random() * 100)+1);
+    }
+
+    return {
+        array: arr,
+        first: arr[0],
+        last: arr[arr.length - 1]
+    };
+}
